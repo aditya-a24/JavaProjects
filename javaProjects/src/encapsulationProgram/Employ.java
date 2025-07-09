@@ -5,6 +5,21 @@ public class Employ {
 	private String name;
 	private double salary;
 	
+	Employ(){
+		System.out.println("Welcome to Employ class no argument constructor.");
+	}
+	
+	// Constructor setting value of private member too but without validation
+	Employ(String name, int age, double salary){
+		this.age = age;
+		this.name = name;
+		this.salary = salary;
+		
+		System.out.println("Name is: "+name);
+		System.out.println("Age is: "+age);
+		System.out.println("Salary is: "+salary);
+	}
+	
 	//setters()
 	public void setAge(int age) {
 		if(age>=18 && age<=65) {
