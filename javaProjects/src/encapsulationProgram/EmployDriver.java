@@ -2,7 +2,7 @@ package encapsulationProgram;
 
 public class EmployDriver {
 	public static void main(String[] args) {
-		Employ e1 = new Employ("Sanji", 25, 45000.24);
+		Employ e1 = new Employ();
 		
 		String name = "Roronoa Zoro";
 		int age = 25;
@@ -13,7 +13,7 @@ public class EmployDriver {
 		e1.setSalary(salary);
 		
 		System.out.println("Name is: "+e1.getName());
-		System.out.println("Age is: "+e1.getAge());
-		System.out.println("Salary is: "+e1.getSalary());
+		System.out.println("Age is: "+e1.getAge()+" Years");
+		System.out.println("Salary is: "+e1.getSalary()+" Rupees");
 	}
 }
