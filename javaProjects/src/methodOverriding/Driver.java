@@ -13,6 +13,7 @@ public class Driver {
 		Vehicle v1 = new Car();
 		System.out.println(v1.a); // it will show a of vehicle
 		System.out.println(v1.x);
+		v1.start(); // Its Method Overriding
 		System.out.println("=====================");
 		System.out.println(((Car)v1).a); // In case of variable, same name variable of child class is showing variable hiding.
 		System.out.println(((Car)v1).y);
