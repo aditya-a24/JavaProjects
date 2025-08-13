@@ -22,6 +22,10 @@ public class ElectricCar extends Car {
 		System.out.println("Drive Electric Car");
 	}
 	
+//	public void accelerate() {
+//		System.out.println("Accelerate Electric Car");
+//	}
+	
 	@Override
 	public void openGate() {
 		System.out.println("Open Gate of Electric Car");
