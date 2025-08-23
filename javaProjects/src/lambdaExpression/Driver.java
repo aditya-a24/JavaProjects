@@ -1,5 +1,8 @@
 package lambdaExpression;
 
+import java.util.HashMap;
+import java.util.Map;
+
 public class Driver {
 	public static void main(String[] args) {
 //		Car c1 = new Car();
@@ -23,5 +26,7 @@ public class Driver {
 		car.drive();
 		bike.drive();
 		train.drive();
+		Map<Integer, Integer> m1 = new HashMap<>();
+		m1.forEach(null);
 	}
 }
