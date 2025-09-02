@@ -2,7 +2,7 @@ package objectClass;
 
 import java.util.Objects;
 
-public class Employ {
+public class Employ implements Cloneable{
 	String name;
 	int id;
 	double salary;
@@ -33,5 +33,13 @@ public class Employ {
 		Employ e = (Employ)obj; // downcasting to employe
 		return this.id == e.id && this.salary == e.salary && this.name.equalsIgnoreCase(e.name);
 		
+	}
+	
+	public Object clone() throws CloneNotSupportedException {
+		return super.clone();
+	}
+	
+	public void finalize() {
+		System.out.println("Finalize Method Called");
 	}
 }

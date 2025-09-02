@@ -1,7 +1,7 @@
 package objectClass;
 
 public class EmployDriver {
-	public static void main(String[] args) {
+	public static void main(String[] args) throws CloneNotSupportedException {
 //		Employ e1 = new Employ();
 //		System.out.println(e1);
 //		System.out.println(e1.toString());
@@ -29,5 +29,14 @@ public class EmployDriver {
 		System.out.println("==============");
 		System.out.println(e1.equals(e2));
 		System.out.println(e1.equals(e3));
+		System.out.println("========== clone() ===========");
+		Employ eCopy = (Employ) e1.clone();
+		e1.id = 1200;
+		e1.name = "John";
+		System.out.println(eCopy);
+		System.out.println("========== finalaize() ===========");
+		e1 = null;
+		e2 = null;
+		System.gc();
 	}
 }
